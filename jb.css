@@ -1,0 +1,152 @@
+body {
+  background: black;
+  display: table;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: darkred;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  color: silver;
+  font-size: 20px;
+}
+
+button {
+  background: black;
+  color: silver;
+}
+
+#alert {
+  resize: auto;
+  display: block;
+  background: black;
+  color: silver;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+#Points {
+  resize: auto;
+  background: maroon;
+  color: silver;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+#dealer {
+  resize: auto;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 10px;
+}
+
+#player {
+  resize: auto;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 30px;
+}
+
+#controls {
+  resize: auto;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 30px;
+  padding: 10px;
+}
+
+
+
+#betInput {
+  background: black;
+  color: silver;
+  text-align: center;
+  width: 100px;
+}
+
+#status {
+  text-align: left;
+  color: silver;
+}
+
+#game {
+  position: relative;
+  display: table;
+  height: 600px;
+  width: 700px;
+  border-width: 10px;
+  border-style: dashed;
+  border-color: maroon;
+  background-color: darkgreen;
+}
+
+#cash {
+  background: maroon;
+  text-align: center;
+  color: silver;
+  width: 50px;
+  margin-left: 5em;
+}
+
+#dealerCash {
+  background: maroon;
+  text-align: center;
+  color: silver;
+  width: 50px;
+  margin-left: 10em;
+}
+
+#currentPot {
+  background: black;
+  text-align: center;
+  color: silver;
+  width: 50px;
+  margin-left: 10em;
+}
+
+#betCash {
+  text-align: left;
+}
+
+#dealerMoney {
+  padding-left: 5em;
+}
+
+#betStatus {
+  padding-left: 5em;
+}
+
+#pickLevel {
+  color: Silver;
+  text-align: center;
+}
+
+#dealerHand {
+  text-align: center;
+  width: 125px;
+  background: maroon;
+}
+
+#playerHand {
+  text-align: center;
+  width: 125px;
+  background: maroon;
+}
+
+#playersMoney {
+  margin-left: 1em;
+}
