@@ -1,4 +1,4 @@
-<![CDATA[
+//<![CDATA[
 $(window).on('load', function() {
 //JQUERY BLACK JACK 
 //MICHAEL WINBERRY
