@@ -1,4 +1,4 @@
-body {
+ body {
   background: black;
   display: table;
   margin: 0 auto;
@@ -107,7 +107,7 @@ button {
   text-align: center;
   color: silver;
   width: 50px;
-  margin-left: 10em;
+  margin-left: 15em;
 }
 
 #currentPot {

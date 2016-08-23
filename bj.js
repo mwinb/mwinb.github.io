@@ -109,6 +109,7 @@ $(document).ready(function() {
 
   $('#cash').val(playerCash);
   $('#dealerCash').val(dealerCash);
+
   $('#betInput').click(function () {
 	this.value = '';
   });
