@@ -111,7 +111,7 @@ $(document).ready(function() {
   $('#dealerCash').val(dealerCash);
   $('#betInput').click(function () {
 	this.value = '';
-  }
+  });
 
   $('#easy').click(function() {
     reset();
