@@ -188,7 +188,8 @@ $(document).ready(function() {
       shownCards = false;
       hasDealt = true;
       $('#alert').val('Jquery Black Jack');
-      dealerDraw(dealerPosition)
+      dealerDraw(dealerPosition);
+      alert(dealerCards);
     } else if (!hasBet)
       $('#alert').val('Must Bet To Play')
     else
