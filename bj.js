@@ -197,8 +197,6 @@ $(document).ready(function() {
 
   //resets all cards.
   var shuffle = function() {
-    Cards = $.extend(true, [], staticCards);
-
     for (var x = 0; x < 10; x++) {
       $(playerImages[x + 2]).hide();
       $(dealerImages[x + 2]).hide();
@@ -398,6 +396,7 @@ $(document).ready(function() {
     hasDealt = false;
     hasBet = false;
     shownCards = true;
+    Cards = $.extend(true, [], staticCards);
 
     $('#Points').val('Player Points: ' + playerPoints + '   DealerPoints: ' + dealerPoints);
 
