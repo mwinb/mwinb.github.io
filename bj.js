@@ -426,6 +426,5 @@ $(document).ready(function() {
     $('#currentBet').val('');
   }
 
-});
 
 });//]]> 
