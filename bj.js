@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 //JQUERY BLACK JACK 
 //MICHAEL WINBERRY
 $(document).ready(function() {
@@ -222,7 +225,7 @@ $(document).ready(function() {
 
     playerPoints = (playerCards[0][2] + playerCards[1][2]);
 
-    if (playerPoints === 22) {
+    if (playerPoints > 21) {
       playerCards[0][2] = 1;
       playerPoints = 12;
     }
@@ -244,7 +247,7 @@ $(document).ready(function() {
     $(dealerImages[0]).attr('src', dealerCards[0][0]);
     dealerPoints = dealerCards[0][2] + dealerCards[1][2];
 
-    if (dealerPoints === 22) {
+    if (dealerPoints > 21) {
       dealerCards[0][2] = 1;
       dealerPoints = 12;
     }
@@ -406,6 +409,8 @@ $(document).ready(function() {
       $('#alert').val('You Won!...');
       hard();
     }
+    
+    dealerPoints = 0;
   };
 
   var resetCards = function() {
@@ -425,4 +430,4 @@ $(document).ready(function() {
   }
 
 
-});
+}); 
