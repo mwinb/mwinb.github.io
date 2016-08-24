@@ -245,7 +245,7 @@ $(document).ready(function() {
       }
     }
     $(dealerImages[0]).attr('src', dealerCards[0][0]);
-    dealerPoints = dealerCards[0][2] + dealerCards[1][2];
+    dealerPoints = (dealerCards[0][2] + dealerCards[1][2]);
 
     if (dealerPoints > 21) {
       dealerCards[0][2] = 1;
@@ -269,20 +269,16 @@ $(document).ready(function() {
    *Dealer 'auto-draw' based on 17 point Casino rule. 
    */
   var dealerDraw = function(position) {
-    var killSwitch = false;
-
     if ((dealerCards[0][2] + dealerCards[1][2] === 21)) {
       showCards();
     } else {
-
-      while (!killSwitch) {
-        if ((dealerPoints < difficulty) && playerPoints < 22) {
+      while (dealerPoints < difficulty) {
           if (dealerCards[position][2] === 11 && dealerCards[position][2] + dealerPoints > 21) {
             dealerCards[position][2] = 1;
             dealerPoints = dealerPoints + 1;
             $(dealerImages[position]).fadeIn();
             $(dealerImages[position]).attr('src', dealerCards[position][0])
-            dealerPosition++;
+            position++;
             dealerHand++;
           } else if (dealerCards[0][2] === 11 && (dealerPoints + dealerCards[position][2] > 21)) {
             dealerCards[0][2] = 1;
@@ -290,7 +286,7 @@ $(document).ready(function() {
             dealerPoints += dealerCards[position][2];
             $(dealerImages[position]).fadeIn();
             $(dealerImages[position]).attr('src', dealerCards[position][0])
-            dealerPosition++;
+            position++;
             dealerHand++;
           } else if (dealerCards[1][2] === 11 && (dealerPoints + dealerCards[position][2] > 21)) {
             dealerCards[1][2] = 1;
@@ -298,17 +294,15 @@ $(document).ready(function() {
             dealerPoints += dealerCards[position][2];
             $(dealerImages[position]).fadeIn();
             $(dealerImages[position]).attr('src', dealerCards[position][0])
-            dealerPosition++;
+            Position++;
             dealerHand++;
           } else {
             dealerPoints += dealerCards[position][2];
             $(dealerImages[position]).fadeIn();
             $(dealerImages[position]).attr('src', dealerCards[position][0])
-            dealerPosition++;
+            position++;
             dealerHand++;
           }
-        } else
-          killSwitch = true;
       }
     }
     if (dealerPoints > 21)
@@ -316,7 +310,6 @@ $(document).ready(function() {
   };
 
   var playerDraw = function(position) {
-
     if (playerCards[position][2] === 11 && playerPoints > 10) {
       playerPoints = playerPoints + 1;
       $(playerImages[position]).fadeIn();
@@ -366,7 +359,7 @@ $(document).ready(function() {
       playerCash += bet * 3 / 2;
       playerCash += bet * 1;
       $('#alert').val('You Won The Round');
-    } else if ((playerPoints < 21 && playerPoints > dealerPoints) || dealerPoints > 21) {
+    } else if ((playerPoints <= 21 && playerPoints > dealerPoints) || dealerPoints > 21) {
       playerCash += bet * 2;
       $('#alert').val('You Won The Round');
     } else if ((playerPoints == dealerPoints) && (dealerPoints <= 21) && (playerPoints <= 21)) {
