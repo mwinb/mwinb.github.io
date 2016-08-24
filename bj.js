@@ -24,7 +24,7 @@ $(document).ready(function() {
    * multidimensional array with data relevent to 52 card deck
    * true indicates they have not been used.
    */
-  var cards = [
+  var staticCards = [
     ['http://i350.photobucket.com/albums/q429/mwinberry/2_Clubs_zpsvvlk2g5q.png', true, 2, 'c'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/2_Diamonds_zpsyrlqhv83.png', true, 2, 'd'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/2_Hearts_zpspwg5mktu.png', true, 2, 'h'],
@@ -78,6 +78,8 @@ $(document).ready(function() {
     ['http://i350.photobucket.com/albums/q429/mwinberry/A_Hearts_zpsgk8qbd6g.png', true, 11, 'h'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/A_Spades_zpsw1b52znh.png', true, 11, 's']
   ];
+  
+  var Cards = $.extend(true, [], staticCards);
 
   var topCard = 'http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png';
 
@@ -195,8 +197,7 @@ $(document).ready(function() {
 
   //resets all cards.
   var shuffle = function() {
-    for (var x = 0; x < 51; x++)
-      cards[x][1] = true;
+    Cards = $.extend(true, [], staticCards);
 
     for (var x = 0; x < 10; x++) {
       $(playerImages[x + 2]).hide();
