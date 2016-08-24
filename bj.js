@@ -70,9 +70,9 @@ $(document).ready(function() {
     ['http://i350.photobucket.com/albums/q429/mwinberry/Q_Hearts_zps6xhmikig.png', true, 10, 'h'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/Q_Spades_zpsnduqptr5.png', true, 10, 's'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/K_Clubs_zpsbj9jot9x.png', true, 10, 'c'],
-    ['http://i350.photobucket.com/albums/q429/mwinberry/K_Spades_zpsxhvf861z.png', true, 10, 'd'],
-    ['http://i350.photobucket.com/albums/q429/mwinberry/Q_Hearts_zps6xhmikig.png', true, 10, 'h'],
-    ['http://i350.photobucket.com/albums/q429/mwinberry/K_Hearts_zpsk2pbzs46.png', true, 10, 's'],
+    ['http://i350.photobucket.com/albums/q429/mwinberry/K_Diamonds_zpsdqd2nixx.png', true, 10, 'd'],
+    ['http://i350.photobucket.com/albums/q429/mwinberry/K_Hearts_zpsk2pbzs46.png', true, 10, 'h'],
+    ['http://i350.photobucket.com/albums/q429/mwinberry/K_Spades_zpsxhvf861z.png', true, 10, 's'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/A_Clubs_zpsqosagrt9.png', true, 11, 'c'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/A_Diamonds_zpsrrk44tz2.png', true, 11, 'd'],
     ['http://i350.photobucket.com/albums/q429/mwinberry/A_Hearts_zpsgk8qbd6g.png', true, 11, 'h'],
@@ -207,15 +207,14 @@ $(document).ready(function() {
   };
 
   /*
-   *Recursive Deal. 
-   *Recursion used to prevent repeat of cards. 
+   * used to prevent repeat of cards. 
    */
   var dealPlayer = function() {
     var pos = 0;
     while (pos < 10) {
       var randomNumber = Math.floor(Math.random() * 51);
 
-      if (cards[randomNumber][1] == true) {
+      if (cards[randomNumber][1] === true) {
         playerCards.push(cards[randomNumber]);
         cards[randomNumber][1] = false;
         $(playerImages[pos]).attr('src', playerCards[pos][0]);
@@ -225,7 +224,7 @@ $(document).ready(function() {
 
     playerPoints = (playerCards[0][2] + playerCards[1][2]);
 
-    if (playerPoints == 22) {
+    if (playerPoints === 22) {
       playerCards[0][2] = 1;
       playerPoints = 12;
     }
@@ -238,7 +237,7 @@ $(document).ready(function() {
     while (pos < 10) {
       var randomNumber = Math.floor(Math.random() * 51);
 
-      if (cards[randomNumber][1] == true) {
+      if (cards[randomNumber][1] === true) {
         dealerCards.push(cards[randomNumber]);
         cards[randomNumber][1] = false;
         pos += 1;
@@ -247,7 +246,7 @@ $(document).ready(function() {
     $(dealerImages[0]).attr('src', dealerCards[0][0]);
     dealerPoints = dealerCards[0][2] + dealerCards[1][2];
 
-    if (dealerPoints == 22) {
+    if (dealerPoints === 22) {
       dealerCards[0][2] = 1;
       dealerPoints = 12;
     }
@@ -271,29 +270,29 @@ $(document).ready(function() {
   var dealerDraw = function(position) {
     var killSwitch = false;
 
-    if ((dealerCards[0][2] + dealerCards[1][2] == 21)) {
+    if ((dealerCards[0][2] + dealerCards[1][2] === 21)) {
       showCards();
     } else {
 
       while (!killSwitch) {
         if ((dealerPoints < difficulty) && playerPoints < 22) {
-          if (dealerCards[position][2] == 11 && dealerCards[position][2] + dealerPoints > 21) {
-            dealerCards[position][2] == 1;
+          if (dealerCards[position][2] === 11 && dealerCards[position][2] + dealerPoints > 21) {
+            dealerCards[position][2] = 1;
             dealerPoints = dealerPoints + 1;
             $(dealerImages[position]).fadeIn();
             $(dealerImages[position]).attr('src', dealerCards[position][0])
             dealerPosition++;
             dealerHand++;
-          } else if (dealerCards[0][2] == 11 && (dealerPoints + dealerCards[position][2] > 21)) {
-            dealerCards[0][2] == 1;
+          } else if (dealerCards[0][2] === 11 && (dealerPoints + dealerCards[position][2] > 21)) {
+            dealerCards[0][2] = 1;
             dealerPoints = dealerPoints - 10;
             dealerPoints += dealerCards[position][2];
             $(dealerImages[position]).fadeIn();
             $(dealerImages[position]).attr('src', dealerCards[position][0])
             dealerPosition++;
             dealerHand++;
-          } else if (dealerCards[1][2] == 11 && (dealerPoints + dealerCards[position][2] > 21)) {
-            dealerCards[1][2] == 1;
+          } else if (dealerCards[1][2] === 11 && (dealerPoints + dealerCards[position][2] > 21)) {
+            dealerCards[1][2] = 1;
             dealerPoints = dealerPoints - 10;
             dealerPoints += dealerCards[position][2];
             $(dealerImages[position]).fadeIn();
@@ -317,19 +316,19 @@ $(document).ready(function() {
 
   var playerDraw = function(position) {
 
-    if (playerCards[position][2] == 11 && playerPoints > 10) {
+    if (playerCards[position][2] === 11 && playerPoints > 10) {
       playerPoints = playerPoints + 1;
       $(playerImages[position]).fadeIn();
       playerPosition++;
       playerHand++;
-    } else if (playerCards[0][2] == 11 && (playerPoints + playerCards[position][2] > 21)) {
+    } else if (playerCards[0][2] === 11 && (playerPoints + playerCards[position][2] > 21)) {
       playerCards[0][2] = 1;
       playerPoints = playerPoints - 10;
       playerPoints += playerCards[position][2];
       $(playerImages[position]).fadeIn();
       playerPosition++;
       playerHand++;
-    } else if (playerCards[1][2] == 11 && (playerPoints + playerCards[position][2] > 21)) {
+    } else if (playerCards[1][2] === 11 && (playerPoints + playerCards[position][2] > 21)) {
       playerCards[1][2] = 1;
       playerPoints = playerPoints - 10;
       playerPoints = playerPoints + playerCards[position][2];
@@ -362,11 +361,11 @@ $(document).ready(function() {
   });
 
   var showCards = function() {
-    if ((playerPoints == 21) && (playerHand == 2) && ((dealerHand > 2) || dealerHand < 21)) {
+    if ((playerPoints === 21) && (playerHand === 2) && ((dealerHand > 2) || dealerHand < 21)) {
       playerCash += bet * 3 / 2;
       playerCash += bet * 1;
       $('#alert').val('You Won The Round');
-    } else if ((playerPoints <= 21 && playerPoints > dealerPoints) || dealerPoints > 21) {
+    } else if ((playerPoints <=== 21 && playerPoints > dealerPoints) || dealerPoints > 21) {
       playerCash += bet * 2;
       $('#alert').val('You Won The Round');
     } else if ((playerPoints == dealerPoints) && (dealerPoints <= 21) && (playerPoints <= 21)) {
