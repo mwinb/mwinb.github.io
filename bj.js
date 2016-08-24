@@ -1,5 +1,3 @@
-//<![CDATA[
-$(window).on('load', function() {
 //JQUERY BLACK JACK 
 //MICHAEL WINBERRY
 $(document).ready(function() {
@@ -365,7 +363,7 @@ $(document).ready(function() {
       playerCash += bet * 3 / 2;
       playerCash += bet * 1;
       $('#alert').val('You Won The Round');
-    } else if ((playerPoints <=== 21 && playerPoints > dealerPoints) || dealerPoints > 21) {
+    } else if ((playerPoints < 21 && playerPoints > dealerPoints) || dealerPoints > 21) {
       playerCash += bet * 2;
       $('#alert').val('You Won The Round');
     } else if ((playerPoints == dealerPoints) && (dealerPoints <= 21) && (playerPoints <= 21)) {
@@ -427,4 +425,4 @@ $(document).ready(function() {
   }
 
 
-});//]]> 
+});
