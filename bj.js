@@ -79,7 +79,7 @@ $(document).ready(function() {
     ['http://i350.photobucket.com/albums/q429/mwinberry/A_Spades_zpsw1b52znh.png', true, 11, 's']
   ];
   
-  var Cards = $.extend(true, [], staticCards);
+  var cards = $.extend(true, [], staticCards);
 
   var topCard = 'http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png';
 
@@ -396,7 +396,8 @@ $(document).ready(function() {
     hasDealt = false;
     hasBet = false;
     shownCards = true;
-    Cards = $.extend(true, [], staticCards);
+    cards = $.extend(true, [], staticCards);
+    
 
     $('#Points').val('Player Points: ' + playerPoints + '   DealerPoints: ' + dealerPoints);
 
