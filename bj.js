@@ -126,6 +126,7 @@ $(document).ready(function() {
     dealerCash = (200);
     $('#cash').val(playerCash);
     $('#dealerCash').val(dealerCash);
+    $('#dixieWin').hide();
   });
 
   $('#medium').click(function() {
@@ -136,6 +137,7 @@ $(document).ready(function() {
     dealerCash = (200);
     $('#dealerCash').val(dealerCash);
     $('#cash').val(playerCash);
+    $('#dixieWin').hide();
   });
 
   $('#hard').click(function() {
@@ -146,6 +148,7 @@ $(document).ready(function() {
     dealerCash = (200);
     $('#dealerCash').val(dealerCash);
     $('#cash').val(playerCash);
+    $('#dixieWin').hide();
   });
 
   $('#bet').click(function() {
