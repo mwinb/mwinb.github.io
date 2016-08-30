@@ -411,7 +411,6 @@ $(document).ready(function() {
     if (dealerCash < 1) {
       $('#alert').val('You Won!...');
       $('#dixieWin').fadeIn();
-      hard();
     }
     
   };
