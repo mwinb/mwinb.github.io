@@ -344,6 +344,7 @@ $(document).ready(function() {
 
   $('#end').click(function() {
     if (hasDealt && !shownCards) {
+      dealerDraw(dealerPosition);
       showCards();
     } else if (shownCards)
       $('#alert').val('Already Played This hand');
@@ -354,7 +355,7 @@ $(document).ready(function() {
   });
 
   var showCards = function() {
-    dealerDraw(dealerPosition);
+
     if ((playerPoints === 21) && (playerHand === 2) && ((dealerHand > 2) || dealerHand < 21)) {
       playerCash += bet * 3 / 2;
       playerCash += bet * 1;
