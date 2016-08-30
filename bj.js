@@ -189,7 +189,6 @@ $(document).ready(function() {
       shownCards = false;
       hasDealt = true;
       $('#alert').val('Jquery Black Jack');
-      dealerDraw(dealerPosition);
     } else if (!hasBet)
       $('#alert').val('Must Bet To Play')
     else
@@ -355,6 +354,7 @@ $(document).ready(function() {
   });
 
   var showCards = function() {
+    dealerDraw(dealerPosition);
     if ((playerPoints === 21) && (playerHand === 2) && ((dealerHand > 2) || dealerHand < 21)) {
       playerCash += bet * 3 / 2;
       playerCash += bet * 1;
