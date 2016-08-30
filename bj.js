@@ -20,6 +20,7 @@ $(document).ready(function() {
   $('#player8').hide();
   $('#player9').hide();
   $('#player10').hide();
+  $('#dixieWin').hide();
 
   /*
    * multidimensional array with data relevent to 52 card deck
@@ -401,10 +402,10 @@ $(document).ready(function() {
     }
     if (dealerCash < 1) {
       $('#alert').val('You Won!...');
+      $('#dixieWin').fadeIn();
       hard();
     }
     
-    dealerPoints = 0;
   };
 
   var resetCards = function() {
