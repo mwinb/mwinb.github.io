@@ -155,7 +155,7 @@ $(document).ready(function() {
     if (isNaN($('#betInput').val()) || $('#betInput').val() === '' || $('#betInput').val() < 1)
       $('#alert').val('Bet Must Be Valid Number')
 
-    else if ($('#betInput').val() > playerCash)
+    else if ($('#betInput').val() > playerCash || $('#betInput').val() > dealerCash)
       $('#alert').val('Not Enough Money');
 
     else if (hasBet || hasDealt)
