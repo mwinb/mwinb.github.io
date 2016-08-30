@@ -141,6 +141,11 @@ $(document).ready(function() {
   });
 
   $('#hard').click(function() {
+	hard();
+    
+  });
+
+  var hard = function () {
     reset();
     resetCards();
     difficulty = 17;
@@ -149,7 +154,7 @@ $(document).ready(function() {
     $('#dealerCash').val(dealerCash);
     $('#cash').val(playerCash);
     $('#dixieWin').hide();
-  });
+  }
 
   $('#bet').click(function() {
     placeBet();
