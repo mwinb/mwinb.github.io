@@ -155,7 +155,7 @@ $(document).ready(function() {
     $('#cash').val(playerCash);
     $('#dixieWin').hide();
   }
-
+  
   $('#bet').click(function() {
     placeBet();
   });
