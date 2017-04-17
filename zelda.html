@@ -57,12 +57,12 @@
             #game {
                 overflow: auto;
                 position: relative;
-                background-image: url("https://lh3.googleusercontent.com/bORRjN9YQTz6MJNVS1PT1Aw26o1pIXNdCcXLj06a85w=w405-h207-p-no");
+                background-image: url("pictures/zeldabackground1.jpg");
                 background-color: black;
                 height: 317px;
                 margin: 0 auto;
                 width: 500px;
-                background-size: cover;
+                background-size: 100%;
                 border-style: solid;
                 border-width: 15px;
 
@@ -186,7 +186,8 @@
                                 $('#bat2').fadeIn();
                                 alert('Fight The Bosses');
                             } else {
-                                $('#game').css('background-image', 'url(https://lh3.googleusercontent.com/bORRjN9YQTz6MJNVS1PT1Aw26o1pIXNdCcXLj06a85w=w405-h207-p-no)');
+                                $('#game').css('background-size','100%');
+                                $('#game').css('background-image', 'url(pictures/zeldabackground1.jpg)');
                             }
                         }
 
@@ -644,27 +645,20 @@
                         return [newH, newW];
                     }
 
-                    function batRandom() {
+                    function randomMovement(mid) {
                         var newq = randomPosition();
-                        $('#bat1').animate({
+                        $(mid.toString()).animate({
                             top: newq[0],
                             left: newq[1]
                         }, 2000, function () {
-                            batRandom();
+                            randomMovement(mid);
                         });
                     }
-                    batRandom();
-
-                    function batTwoRandom() {
-                        var newq = randomPosition();
-                        $('#bat2').animate({
-                            top: newq[0],
-                            left: newq[1]
-                        }, 2000, function () {
-                            batTwoRandom();
-                        });
-                    }
-                    batTwoRandom();
+                    randomMovement('#midna');
+                    randomMovement('#bat2');
+                    randomMovement('#bat1')
+                    randomMovement('#octo1');
+                    randomMovement('#octo');
                 });
             });//]]> 
 
@@ -679,6 +673,7 @@
             <button onclick="window.location.href = 'https://drive.google.com/open?id=0B97JO6sXgCVzNnBrZDM0QTdXMms'" type='button'>R&#233sum&#233</button>
             <button onclick='window.location.href = "bj.html"' type='button'>Black Jack</button>
             <button onclick='window.location.href = "https://drive.google.com/drive/folders/0B97JO6sXgCVzSm84RzZTQnpLakk?usp=sharing"' type='button'>Terminal Docs</button>
+            <button onclick='window.location.href = "apachehome.html"' type='button'>Apache Co. Web Site</button>
         </div>
         <p>
             <input type='button' id='inst' value='Instructions' />
