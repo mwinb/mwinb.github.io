@@ -1,123 +1,121 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script>
-
-    
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js"></script>
-    
-    
-  
-	<script src="bj.js" ></script>
-  
-    <link rel="stylesheet" type="text/css" href="jb.css">
-  
-
-  
-
-  
-
-  <title>JQuery Black Jack</title>
-
-  
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 
-  
-</head>
+        <script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script>
 
-<body>
-  <body>
 
-  <h1>JQuery Black Jack</h1>
-  <div align='center'>
-      <button onclick="window.location.href='index.html'" type='button'>Home</button>
-        <button onclick="window.location.href='https://drive.google.com/open?id=0B97JO6sXgCVzNnBrZDM0QTdXMms'" type='button'>R&#233sum&#233</button>
-        <button onclick='window.location.href="zelda.html"' type='button'>Zelda Jquery</button>
-        <button onclick='window.location.href="https://drive.google.com/drive/folders/0B97JO6sXgCVzSm84RzZTQnpLakk?usp=sharing"' type='button'>Terminal Docs</button>
-    </div>
-  
-  <div align='center'>
-    <p id="pickLevel" >
-        Choose Difficulty:
-    </p>
-    <button type='button' id='easy'  >Easy</button>
-    <button type='button' id='medium' >Medium</button>
-    <button type='button' id='hard' >Hard</button>
-    <p></p>
-  </div>
-  
-  <div>
-    <img id='dixieWin' src='photos/dixie.jpg' />
-  </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js"></script>
 
-  <div id='game'>
 
-    <input id='alert' type='text' value='Welcome To Jquery Black Jack' />
-    <input id='Points' type='text' />
-    <p id='status'>
-      <span id='playersMoney'>Players Money</span>
-      <span id='betStatus'>Current Pot</span>
-      <span id='dealerMoney'>Dealers Money</span>
-    </p>
-    <p id='betCash'>
-      <input id='cash' type='text' />
-      <input id='currentPot' type='text' />
-      <input id='dealerCash' type='text' />
-    </p>
 
-    <div id='dealer'>
-      <div id='dealerHand'>
-        <p>
-          Dealers Hand
-        </p>
-      </div>
+        <script src="bj.js" ></script>
 
-      <img id='dealer1' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer2' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer3' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer4' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer5' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer6' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer7' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer8' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer9' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='dealer10' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-    </div>
+        <link rel="stylesheet" type="text/css" href="jb.css">
 
-    <div id='player'>
-      <div id='playerHand'>
-        <p>
-          Players Hand
-        </p>
-      </div>
-      <img id='player1' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player2' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player3' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player4' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player5' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player6' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player7' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player8' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player9' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-      <img id='player10' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
-    </div>
-	
 
-    <div id='controls'>
-      <input type='text' id='betInput' value='Bet Here' />
-      <button type='button' id='bet'>Bet</button>
-      <button type='button' id='deal'> Deal</button>
-      <button type='button' id='draw'>Draw Card</button>
-      <button type='button' id='end'>Show Cards</button>
-    </div>
-  </div>
-</body>
 
-  
-</body>
+
+
+
+        <title>JQuery Black Jack</title>
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <h1>JQuery Black Jack</h1>
+        <div align='center'>
+            <button onclick="window.location.href = 'index.html'" type='button'>Home</button>
+            <button onclick="window.location.href = 'https://drive.google.com/open?id=0B97JO6sXgCVzNnBrZDM0QTdXMms'" type='button'>R&#233sum&#233</button>
+            <button onclick='window.location.href = "zelda.html"' type='button'>Zelda Jquery</button>
+            <button onclick='window.location.href = "https://drive.google.com/drive/folders/0B97JO6sXgCVzSm84RzZTQnpLakk?usp=sharing"' type='button'>Terminal Docs</button>
+        </div>
+
+        <div align='center'>
+            <p id="pickLevel" >
+                Choose Difficulty:
+            </p>
+            <button type='button' id='easy'  >Easy</button>
+            <button type='button' id='medium' >Medium</button>
+            <button type='button' id='hard' >Hard</button>
+            <p></p>
+        </div>
+
+        <div>
+            <img id='dixieWin' src='photos/dixie.jpg' />
+        </div>
+
+        <div id='game'>
+
+            <input id='alert' type='text' value='Welcome To Jquery Black Jack' />
+            <input id='Points' type='text' />
+            <p id='status'>
+                <span id='playersMoney'>Players Money</span>
+                <span id='betStatus'>Current Pot</span>
+                <span id='dealerMoney'>Dealers Money</span>
+            </p>
+            <p id='betCash'>
+                <input id='cash' type='text' />
+                <input id='currentPot' type='text' />
+                <input id='dealerCash' type='text' />
+            </p>
+
+            <div id='dealer'>
+                <div id='dealerHand'>
+                    <p>
+                        Dealers Hand
+                    </p>
+                </div>
+
+                <img id='dealer1' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer2' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer3' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer4' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer5' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer6' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer7' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer8' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer9' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='dealer10' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+            </div>
+
+            <div id='player'>
+                <div id='playerHand'>
+                    <p>
+                        Players Hand
+                    </p>
+                </div>
+                <img id='player1' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player2' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player3' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player4' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player5' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player6' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player7' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player8' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player9' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+                <img id='player10' src='http://i350.photobucket.com/albums/q429/mwinberry/Top_Card_zpskelxprbm.png' />
+            </div>
+
+
+            <div id='controls'>
+                <input type='text' id='betInput' value='Bet Here' />
+                <button type='button' id='bet'>Bet</button>
+                <button type='button' id='deal'> Deal</button>
+                <button type='button' id='draw'>Draw Card</button>
+                <button type='button' id='end'>Show Cards</button>
+            </div>
+        </div>
+    </body>
+
+
 
 </html>
 
