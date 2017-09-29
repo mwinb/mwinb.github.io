@@ -69,7 +69,7 @@ $(document).ready(function () {
         ['Cards/J_Spades.png', true, 10, 's'],
         ['Cards/Q_Clubs.png', true, 10, 'c'],
         ['Cards/Q_Diamonds.png', true, 10, 'd'],
-        ['Cards/Q_Hearts', true, 10, 'h'],
+        ['Cards/Q_Hearts.png', true, 10, 'h'],
         ['Cards/Q_Spades.png', true, 10, 's'],
         ['Cards/K_Clubs.png', true, 10, 'c'],
         ['Cards/K_Diamonds.png', true, 10, 'd'],
