@@ -26,7 +26,7 @@ $(function () {
                                 alert('Fight The Bosses');
                             } else {
                                 $('#game').css('background-size','100%');
-                                $('#game').css('background-image', 'url(pictures/zeldabackground1.jpg)');
+                                $('#game').css('background-image', 'url(zeldabackground1.jpg)');
                             }
                         }
 

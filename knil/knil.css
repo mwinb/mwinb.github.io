@@ -18,7 +18,7 @@ p {
             #game {
                 overflow: auto;
                 position: relative;
-                background-image: url("pictures/zeldabackground1.jpg");
+                background-image: url("zeldabackground1.jpg");
                 background-color: black;
                 height: 317px;
                 margin: 0 auto;
