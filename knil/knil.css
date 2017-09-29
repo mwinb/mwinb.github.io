@@ -1,0 +1,118 @@
+body {
+                background-color: forestgreen;
+            }
+            p {
+                text-align: center;
+            }
+            h1 {
+                color: goldenrod;
+                text-align: center;
+            }
+            #inst {
+                width: 100px;
+            }
+            #res {
+                width: 100px
+            }
+            #game {
+                overflow: auto;
+                position: relative;
+                background-image: url("pictures/zeldabackground1.jpg");
+                background-color: black;
+                height: 317px;
+                margin: 0 auto;
+                width: 500px;
+                background-size: 100%;
+                border-style: solid;
+                border-width: 15px;
+
+            }
+            #a {
+                position: absolute;
+                top: 10px;
+                left: 50px;
+            }
+            #health2 {
+                position: absolute;
+                top: 10px;
+                left: 20px
+            }
+            #health3 {
+                position: absolute;
+                left: 35px;
+                top: 10px;
+            }
+            #link {
+                position: absolute;
+                top: 50px;
+                left: 65px;
+            }
+
+            #octo1 {
+                position: absolute;
+                top: 178px;
+                left: 175px;
+                height: 20px;
+                width: 20px;
+            }
+            .octo {
+                height: 20px;
+                width: 20px;
+            }
+            #octo2 {
+                position: absolute;
+                left: 220px;
+                top: 50px;
+            }
+            #octo {
+                position: absolute;
+                top: 50px;
+                left: 340px;
+                height: 36px;
+                width: 39px;
+            }
+            #chicken {
+                position: absolute;
+                top: 240px;
+                left: 250px;
+                height: 25px;
+                width: 25px;
+            }
+            #midna {
+                position: absolute;
+                top: 15px;
+                left: 190px;
+                width: 100px;
+                height: 100px;
+            }
+            #heads {
+                position: absolute;
+                top: 200px;
+                left: 65px;
+                height: 50px;
+                width: 50px;
+            }
+            #bat2 {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                top: 200px;
+                left: 100px;
+            }
+            #bat1 {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                top: 215px;
+                left: 120px;
+            }
+            #win {
+                position: absolute;
+                top: 200px;
+                left: 235px;
+            }
+            #tri {
+                position: absolute;
+                top: 200px;
+                left: 225px;
+            }
