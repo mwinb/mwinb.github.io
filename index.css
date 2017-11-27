@@ -10,17 +10,39 @@ h2 {
 }
 h3 {
     text-align: center;
-.sketch {
-    position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-    height: 0;
 }
-.sketch iframe {
+
+
+
+#zombulatorAbout {
+    margin-left: 5em;
+    margin-right: 5em;
+    text-align:left;
+    font-size: 20;
+}
+
+#zombulatorTitle {
+    text-align: left;
+}
+
+#zombulatorImage {
+    height: 300px;
+    width:  500px;
+    display: block;
+    margin-left: 5em;
+
+}
+
+#sketch {
+    padding: 5em;
+    height:1200;
+    width:100%;
+}
+
+iframe {
+    margin:5em;
     position: absolute;
-    top: 0;
-    left: 0;;
-    width: 100%;
+    overflow: hidden;
     height: 100%;
-}
+    width: 100%;
 }
