@@ -14,18 +14,18 @@ h3 {
 
 
 
-#zombulatorAbout {
+.about {
     margin-left: 5em;
     margin-right: 5em;
     text-align:left;
     font-size: 20;
 }
 
-#zombulatorTitle {
+.title {
     text-align: left;
 }
 
-#zombulatorImage {
+.thumbNail {
     height: 300px;
     width:  500px;
     display: block;
