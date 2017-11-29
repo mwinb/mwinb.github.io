@@ -4,7 +4,14 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charsetF-8">
+    
     <link href="index.css" media="screen" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js"></script>
+
+
+    <script src="portfolio.js" ></script>
+    
     <title>Portfolio Home</title>
 </head>
 
@@ -58,106 +65,29 @@
         Projects
     </h2>
 
-    <h3 class='title'>Knil's jQuery Arena </h3>
+    <h3 id='title'>Knil's jQuery Arena </h3>
+    <h2 id='date'>Spring 2015</h2>
     
-    <p class='about'>
+    <p id='about'>
         Knil's jQuery arena is a homage to Zelda built using jQuery JavaScript library. It was my first attempt at programming and allows the user to take control of Knil and fight their way through two levels in order to find the obtain the treasured "Knil Force". 
     </p>
     
-    <a href='/knil'>
-        <img class='thumbNail' src='knilImage.jpeg' />
+    <a id='imageLink' href='/knil'>
+        <img id='projectImage' src='knilImage.jpeg' />
     </a>
 
-    <a href='https://github.com/mwinb/knil'>
+    <a id='sourceLink' href='https://github.com/mwinb/knil'>
         <h4>
             Source Code
         </h4>
     </a>
 
-    <br>
+    <div id='previous'>
+        <button id='previous'> < </button>
+        <button id='next'> > </button>
+    </div>
 
-    <h3 class='title'>
-        Apache Company Site
-    </h3>
 
-    <p class='about'>
-        A website that I created in order to help learn html, css, and js. Based on the Marine Unit that I deployed to Afghanistan in 2011 with. 
-    </p>
-
-    <a href='/apacheco'>
-        <img class='thumbNail' src='apacheco.jpg'/>
-    </a>
-
-    <a href='https://github.com/mwinb/apacheco'>
-        <h4>
-            Source Code
-        </h4>
-    </a>
-
-    <br>
-
-    <h3 class='title'>Black Jack</h3>
-
-    <p class='about'>
-         A web based game of Black Jack using the jQuery JavaScript library. Pits the user against a computer dealer and has 3 modes of difficulty. 
-    </p>
-
-    <a href='blackJack/bj.html'>
-        <img class='thumbNail' src='blackJackImage.jpeg' />
-    </a>
-
-    <a href='https//:github.com/mwinb/blackjack'>
-        <h4>
-            Source Code
-        </h4>
-    </a>
-    
-    
-    <br>
-
-    <h3 class='title'>
-        TerminalDocs/Termdocs
-    </h3>
-
-    <p class='about'>
-        TerminalDocs is a console based text editor that I created using Python 2.7 in order to help me comment, read, and edit code documents line by line. It moves through the text allowing for active insertion and many other built in commands including an open command that opens the file in the users default IDE/text editor in order to make major changes. 
-    </p>
-    
-    <p class='about'>
-        Termdocs: lighter version that does not contain a gui based file explorer and relies on manual path input. Also allows for console calling on macOS
-    </p>
-    
-    <a href='https://github.com/mwinb/termdocs'>
-        <img class='thumbNail' src='termdocsImage.jpeg' />
-    </a>
-
-    <a href='https://github.com/mwinb/TerminalDocs'>
-        <h4>
-            Terminal Docs Source Code
-        </h4>
-    </a>
-
-    <br>
-
-    <h3 class='title'>
-        Zombulator
-    </h3>
-    
-    <p class='about'>
-        Zombulator is a p5.js sketch that tests the mettle of humans against zombies. Allows for user interaction to help administer the antidote to the zombies, and turn the tide for humans.
-    </p>
-
-    <a href='/cs160Zombulator'>
-        <img class='thumbNail' src="zombulatorImage.png" />
-    </a>
-
-    <a href='https://github.com/mwinb/cs160Zombulator'>
-        <h4>
-            Source Code
-        </h4>
-    </a>
-
-    <br>
 
 </body>
 
