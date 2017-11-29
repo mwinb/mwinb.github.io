@@ -23,7 +23,7 @@ $(document).ready( function () {
 	'TerminalDocs is a console based text editor that I created using Python 2.7.' 
 	+ 'I created TerminalDocs in order to help me comment, read, and edit code documents' 
 	+ 'line by line. Supports many commands such as -oe wich opens current file into' 
-	+ 'users default text editor.' + '/n'
+	+ 'users default text editor.' + '\n'
 	+ 'Termdocs: A lighter version that does not contain GUI file explorer.' 
 	+ 'Allows for command line calling in macOS',
 	'https://github.com/mwinb/TerminalDocs'],
@@ -46,7 +46,7 @@ $(document).ready( function () {
 
 	$('#next').click(function () {
 		count += 1;
-		if(count > projects.length) {
+		if(count => projects.length) {
 			count = 0;
 		}
 		setSlide(count);
@@ -55,7 +55,7 @@ $(document).ready( function () {
 	$('#previous').click(function () {
 		count -= 1;
 		if (count < 0) {
-			count = projects.length;
+			count = projects.length-1;
 		}
 
 		setSlide(count);
