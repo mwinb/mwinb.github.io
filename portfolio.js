@@ -1,7 +1,8 @@
 //Portfolio 
 //Michael Winberry
-var count = 0;
+
 $(document).ready( function () {
+	var count = 0;
 	//project array [[title, date, image, imageLink, about, sourceCodeLink]]
 	var projects = [
 	['Knil' + "'" + 's' + ' jQuery Arena', 'Spring 2015', 'knilImage.jpeg', '/knil', 
@@ -23,9 +24,7 @@ $(document).ready( function () {
 	'TerminalDocs is a console based text editor that I created using Python 2.7. ' 
 	+ 'I created TerminalDocs in order to help me comment, read, and edit code documents' 
 	+ 'line by line. Supports many commands such as -oe wich opens current file into' 
-	+ 'users default text editor. ' + '\n'
-	+ 'Termdocs: A lighter version that does not contain GUI file explorer. ' 
-	+ 'Allows for command line calling in macOS',
+	+ ' users default text editor. ',
 	'https://github.com/mwinb/TerminalDocs'],
 	['Zombulator', 'Fall 17', 'zombulatorImage.png', '/cs160Zombulator',
 	'Zombulator is a p5.js sketch that tests the mettle of humans against zombies. ' 
@@ -35,7 +34,11 @@ $(document).ready( function () {
 	];
 
 
+	var total = projects.length - 1;
+
 	var setSlide = function (position) {
+		var current = position + 1;
+		$('#currentProject').text(current + '/' + total);
 		$('#title').text(projects[position][0]);
 		$('#date').text(projects[position][1]);
 		$('#projectImage').attr('src', projects[position][2]);
