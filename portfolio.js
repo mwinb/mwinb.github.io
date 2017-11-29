@@ -34,7 +34,7 @@ $(document).ready( function () {
 	];
 
 
-	var total = projects.length - 1;
+	var total = projects.length;
 
 	var setSlide = function (position) {
 		var current = position + 1;
