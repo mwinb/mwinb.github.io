@@ -13,89 +13,117 @@
     <script src="portfolio.js" ></script>
     
     <title>Portfolio Home</title>
+
 </head>
 
 <body>
-    <h1>Michael Winberry</h1>
-    <div >
-        <img src="mikeanddixie.jpeg" alt="" height="250" width="250"/>
+    <div class='header'>
+        <div class='spacer'> </div>
+        <br>
+        <div id='personalInfo'>
+            <h1>Michael Winberry</h1>
+
+            <div >
+                <img src="mikeanddixie.jpeg" alt="" height="250" width="250"/>
+            </div>
+
+            <h3>mwinberry0101@gmail.com</h3>
+
+            <h3 onclick='window.location.href="https://github.com/mwinb"'>https://github.com/mwinb</h3>
+        </div>
+
+        <br>
+
+        <div class='spacer' id='heading'></div>
     </div>
-
-    <h2 > Portfolio </h2>
-
-    <div >
-
-        <button onclick="window.location.href = '../Resume.pdf'" type='button'>
-            R&#233sum&#233
-        </button>
-        
-        <button onclick='window.location.href = "/blackjack"' type='button'>
-            Black Jack
-        </button>
-        
-        <button onclick='window.location.href = "/knil"' type='button'>
-            Knil's Jquery Arena
-        </button>
-        
-        <button onclick='window.location.href = "https://github.com/mwinb/TerminalDocs"' type='button'>TerminalDocs
-        </button>
-        
-        <button onclick='window.location.href = "https://github.com/mwinb/termdocs"' type='button'>
-            TerminalDocs Lite
-        </button>
-        
-        <button onclick='window.location.href = "/apacheco"' type='button'>
-            Apache Co. Web Site
-        </button>
-        
-        <button onclick='window.location.href = "/cs160Zombulator"' type='button'>
-            Zombulator
-        </button>
-    </div>
-
-    <h3>mwinberry0101@gmail.com</h3>
-    
-    <h3>(458)-206-0365</h3>
-    
-    <h3 onclick='window.location.href="https://github.com/mwinb"'>https://github.com/mwinb</h3>
 
     <br>
 
-    <h2>
-        Projects
-    </h2>
+    <div id="linkMenu">
 
-    <h3 id='title'></h3>
-    <h2 id='date'></h2>
-    
-    <p id='about'>
+        <h1> Portfolio Links</h1>
+
+
+
+        <button class='buttons' onclick="window.location.href = 'https://mwinb.github.io/'" type='button'>
+            Home
+        </button>
+
+        <button class='buttons' onclick="window.location.href = 'https:/mwinb.github.io/Resume.pdf'" type='button'>
+            R&#233sum&#233
+        </button>
         
-    </p>
+        <button class='buttons' onclick='window.location.href = "/blackjack"' type='button'>
+            Black Jack
+        </button>
+        
+        <button class='buttons' onclick='window.location.href = "../knil"' type='button'>
+            Knil's Jquery Arena
+        </button>
+        
+        <button class='buttons' onclick='window.location.href = "https://github.com/mwinb/TerminalDocs"' type='button'>TerminalDocs
+        </button>
+        
+        <button class='buttons' onclick='window.location.href = "https://github.com/mwinb/termdocs"' type='button'>
+            TerminalDocs Lite
+        </button>
+        
+        <button class='buttons' onclick='window.location.href = "../apacheco"' type='button'>
+            Apache Co. Web Site
+        </button>
+        
+        <button class='buttons' onclick='window.location.href = "/cs160Zombulator"' type='button'>
+            Zombulator
+        </button>
+
+        <br>
+        <br>
+    </div>
+    <br>
+    <div class='header'>
+        <div class='spacer'></div>
+        <br>
+        <h1>
+            Project's Slide Show
+        </h1> 
+        <br>
+        <div class='spacer'></div>
+    </div>
+    <br>
+    <div id='slideShow'>
+        <div class='spacer2'> </div>
+        <h2 id='title'></h2>
+        <h3 id='date'></h3>
+
+        <a id='imageLink' href=''>
+            <img id='projectImage' src='' />
+        </a>
+
+        <a id='sourceLink' href=''>
+            <h3>
+                Source Code
+            </h3>
+        </a>
+
+
+        <p id='about'></p>
+
+        <div>
+            <button class='buttons' id='previous'> < </button>
+            <button class='buttons' id='next'> > </button>
+        </div>
+
+        <div>
+            <p id='currentProject'>
+            </p>
+        </div>
+        <div class='spacer2'> </div>
+    </div>
     
-    <a id='imageLink' href=''>
-        <img id='projectImage' src='' />
-    </a>
+    <br>
 
-    <a id='sourceLink' href=''>
-        <h4>
-            Source Code
-        </h4>
-    </a>
-
-    <div>
-        <button id='previous'> < </button>
-        <button id='next'> > </button>
-    </div>
-    <div>
-        <p id='currentProject'>
-        </p>
-    </div>
-
-
-
+    <div class='spacer'> </div>
 
 </body>
 
 </html>
-
-

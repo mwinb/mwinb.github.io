@@ -16,6 +16,75 @@ h4 {
 	text-align: center;
 }
 
+.header {
+    background-color: #f2f3f4;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+
+.buttons {
+    width: 300px;
+    background-color: #68778e;
+    color: white;
+    font-size: 1em;
+    display: inline;
+    border-left: 2px white solid;
+}
+
+#about {
+    font-size: 1.2em;
+}
+
+#linkMenu {
+    border-style: solid;
+    border-color: coral;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: #f2f3f4;
+}
+
+#slideShow {
+    background-color: #f2f3f4;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    border-left-style: solid;
+    border-left-color: coral;
+    border-right-color: coral;
+    border-right-style: solid;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#personalInfo {
+    background-color: #f2f3f4;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-color: coral;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.spacer {
+    height: 10px;
+    background-color: #1a5682;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.spacer2 {
+    height: 5px;
+    background-color: coral;
+}
+
+.spacer3 {
+    height: 10px;
+}
 
 #about {
     text-align:center;
@@ -37,16 +106,5 @@ h4 {
 
 }
 
-#sketch {
-    padding: 5em;
-    height:1200;
-    width:100%;
-}
 
-iframe {
-    margin:5em;
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
+
