@@ -27,7 +27,7 @@ h4 {
 
 #about {
     text-align:center;
-    font-size: 20;
+    font-size: 1.2em;
     margin-left:25%;
     margin-right:25%;
 }
@@ -46,10 +46,6 @@ h4 {
 
 }
 
-
-#about {
-    font-size: 1.2em;
-}
 
 #linkMenu {
     border-style: solid;
@@ -71,7 +67,8 @@ h4 {
 
 }
 
-#personalInfo {
+
+.personalInfo {
     background-color: #f2f3f4;
     width: 40%;
     margin-right: auto;
@@ -80,6 +77,16 @@ h4 {
     border-color: coral;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
+}
+.aboutMe {
+    font-size: 1.2em;
+    background-color: #f2f3f4;
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-color: coral;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .spacer {
     height: 10px;
