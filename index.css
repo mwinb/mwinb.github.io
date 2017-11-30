@@ -19,8 +19,8 @@ h4 {
 #mikeDixie {
     margin-left: auto;
     margin-right: auto;
-    height: 250px;
-    width: 250px;
+    max-height: 50%;
+    width: 50%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
@@ -37,8 +37,8 @@ h4 {
 }
 
 #projectImage {
-    height: 300px;
-    width:  500px;
+    height: 50%;
+    width:  50%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
