@@ -29,27 +29,24 @@ $(document).ready( function () {
 	'https://github.com/mwinb/apacheco']
 	];
 
+	var slideVars = ['#currentProject', '#title', '#date', 'projectImage',
+	'#imageLink', '#about', '#sourceLink']
+
 	var count = 0;
 
 	var total = projects.length;
-
-	var setSlide = function (position) {
-		var current = position + 1;
-		$('#currentProject').text(current + '/' + total);
-		$('#title').text(projects[position][0]);
-		$('#date').text(projects[position][1]);
-		$('#projectImage').attr('src', projects[position][2]);
-		$('#imageLink').attr('href', projects[position][3]);
-		$('#about').text(projects[position][4]);
-		$('#sourceLink').attr('href', projects[position][5]);
-	};
 
 	$('#next').click(function () {
 		count += 1;
 		if(count >= projects.length) {
 			count = 0;
 		}
-		setSlide(count);
+
+		$('#slideShow').fadeOut(2000, function () {
+			setSlide(count);
+		});
+		
+
 	});
 
 	$('#previous').click(function () {
@@ -58,8 +55,28 @@ $(document).ready( function () {
 			count = projects.length-1;
 		}
 
-		setSlide(count);
+		$('#slideShow').fadeOut(2000, function () {
+			setSlide(count);
+		});
+
 	});
+
+	var setSlide = function (position) 
+	{
+		var current = position + 1;
+		$('#currentProject').text(current + '/' + total);
+		$('#title').text(projects[position][0]);
+		$('#date').text(projects[position][1]);
+		$('#projectImage').attr('src', projects[position][2]);
+		$('#imageLink').attr('href', projects[position][3]);
+		$('#about').text(projects[position][4]);
+		$('#sourceLink').attr('href', projects[position][5]);
+		
+		for (var i = 0; i < slideVars.length; ++i)
+		{
+			$('#slideShow').fadeIn(4000);
+		}
+	};
 
 	setSlide(count);
 
