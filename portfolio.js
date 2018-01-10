@@ -4,10 +4,10 @@
 $(document).ready( function () {
 	//project array [[title, date, image, imageLink, about, sourceCodeLink]]
 	var projects = [
-    ['Functionality Check List', 'Winter 18', ' ', 'https://mwinb.github.io/funchecker', 
+    ['Functionality Check List', 'Winter 18', 'funChecker.jpeg', 'https://mwinb.github.io/funchecker', 
     'A page that I created in order to track accessories while testing devices for Geek Squad.'
-     + ' Allows for user to check off the items by clicking and creates a hexadecimal code that relates to whether'
-     +' or not the accessory button is selected. The user can write the code on our testing sheet, '
+     + ' Allows for user to check off the items by clicking on them. Creates a hexadecimal code that relates to whether'
+     +' or not the accessory button is selected. The user can write the code on a sheet, '
      +'allowing for the next user to input the code and see what items came with the device.', 
      'https://github.com/mwinb/funChecker'],
 
