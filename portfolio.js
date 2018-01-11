@@ -50,7 +50,7 @@ $(document).ready( function () {
 	var populateList = function(list) {
 		for (var i = 0; i < skillList.length; ++i)
 		{
-			$('.skills').append("<div class='skillList'>" + skillList[i] + "</div" );
+                    $('.skills').append("<div class='skillList'>" + skillList[i] _ "</div>");
 		}
 	}
 
