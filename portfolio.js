@@ -2,14 +2,16 @@
 //Michael Winberry
 
 $(document).ready( function () {
+
+	var skillList = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Python','p5js', 'Java', 'i86 Assembly'];
 	//project array [[title, date, image, imageLink, about, sourceCodeLink]]
 	var projects = [
-    ['Functionality Check List', 'Winter 18', 'funChecker.jpeg', 'https://mwinb.github.io/funchecker', 
-    'A page that I created in order to track accessories while testing devices for Geek Squad.'
-     + ' Allows for user to check off the items by clicking on them. Creates a hexadecimal code that relates to whether'
-     +' or not the accessory button is selected. The user can write the code on a sheet, '
-     +'allowing for the next user to input the code and see what items came with the device.', 
-     'https://github.com/mwinb/funChecker'],
+	['Functionality Check List', 'Winter 18', 'funChecker.jpeg', 'https://mwinb.github.io/funchecker', 
+	'A page that I created in order to track accessories while testing devices for Geek Squad.'
+	+ ' Allows for user to check off the items by clicking on them. Creates a hexadecimal code that relates to whether'
+	+' or not the accessory button is selected. The user can write the code on a sheet, '
+	+'allowing for the next user to input the code and see what items came with the device.', 
+	'https://github.com/mwinb/funChecker'],
 
 	['Zombulator', 'Fall 2017', 'zombulatorImage.png', '/cs160Zombulator',
 	'Zombulator is a p5.js sketch that tests the mettle of humans against zombies. ' 
@@ -42,6 +44,15 @@ $(document).ready( function () {
 
 	var slideVars = ['#currentProject', '#title', '#date', 'projectImage',
 	'#imageLink', '#about', '#sourceLink']
+
+
+
+	var populateList = function(list) {
+		for (var i = 0; i < skillList.length; ++i)
+		{
+			$('.skills').append("<div class='skillList'>" + skillList[i] + "</div" );
+		}
+	}
 
 	var count = 0;
 
@@ -90,6 +101,7 @@ $(document).ready( function () {
 	};
 
 	setSlide(count);
+	populateList(skillList);
 
 });
 
