@@ -7,7 +7,7 @@ $(document).ready( function () {
 	var projects = [
 	['Labor Tracker', 'Fall 18', 'Utilization.PNG', 'https://mwinb.github.io/labortracker', 'A Web application I created in order' +
 	' to help increase utilization and accountability by allowing user to input thier hours worked and compare it with the amount of hours generated. ' +
-	'Also allows the user to populate tables with totals for the specified periods. The user can then use this data to help schedule and better use labor shours' + 
+	'Also allows the user to populate tables with totals for the specified periods. The user can then use this data to help schedule and to better allocate labor hours' + 
 	' Uses Node, express, mongodb, and bcrypt.', 'https://github.com/mwinb/LaborTrackerV2'],
 
 	['Functionality Check List', 'Winter 18', 'funChecker.jpeg', 'https://mwinb.github.io/funchecker', 
