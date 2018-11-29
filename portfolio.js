@@ -66,7 +66,7 @@ $(document).ready( function () {
             count = 0;
         }
 
-        $('#slideShow').fadeOut(1000, function () {
+        $('#slideShow').fadeOut(500, function () {
             setSlide(count);
         });
 
@@ -79,7 +79,7 @@ $(document).ready( function () {
             count = projects.length-1;
         }
 
-        $('#slideShow').fadeOut(1000, function () {
+        $('#slideShow').fadeOut(500, function () {
             setSlide(count);
         });
 
