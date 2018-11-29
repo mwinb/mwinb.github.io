@@ -66,7 +66,7 @@ $(document).ready( function () {
             count = 0;
         }
 
-        $('#slideShow').fadeOut(2000, function () {
+        $('#slideShow').fadeOut(1000, function () {
             setSlide(count);
         });
 
@@ -79,7 +79,7 @@ $(document).ready( function () {
             count = projects.length-1;
         }
 
-        $('#slideShow').fadeOut(2000, function () {
+        $('#slideShow').fadeOut(1000, function () {
             setSlide(count);
         });
 
@@ -98,7 +98,7 @@ $(document).ready( function () {
 
         for (var i = 0; i < slideVars.length; ++i)
         {
-            $('#slideShow').fadeIn(4000);
+            $('#slideShow').fadeIn(1000);
         }
     };
 
