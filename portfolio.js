@@ -8,7 +8,7 @@ $(document).ready( function () {
     ['Labor Tracker', 'Fall 18', 'Utilization.PNG', 'https://labor.ngrok.io', 'A Web application I created in order' +
     ' to help increase utilization and accountability by allowing user to input thier hours worked and compare it with the amount of hours generated. ' +
     'Also allows the user to populate tables with totals for the specified periods. The user can then use this data to help schedule and to better allocate labor hours' + 
-    ' Uses Node, express, mongodb, and bcrypt.', 'https://github.com/mwinb/LaborTrackerV2'],
+    ' Uses Node, express, mongodb, and bcrypt.', 'https://github.com/mwinb/labortracker'],
 
     ['Functionality Check List', 'Winter 18', 'funChecker.jpeg', 'https://mwinb.github.io/funchecker', 
     'A page that I created in order to track accessories while testing devices for Geek Squad.'
