@@ -78,6 +78,8 @@ a {
     background-color: #f2f3f4;
     width: 80%;
     height: 80%;
+    min-height: fit-content !important;
+    min-width: fit-content !important;
     margin-right: auto;
     margin-left: auto;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
