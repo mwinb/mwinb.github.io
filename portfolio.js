@@ -1,9 +1,7 @@
 //Portfolio 
 //Michael Winberry
 
-$(document).ready( function () {
-    var skillList = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Python','p5js', 'Java', 'i86 Assembly'];
-    //project array [[title, date, image, imageLink, about, sourceCodeLink]]
+$(document).ready( function () {    
     var projects = [
     ['Labor Tracker', 'Fall 18', 'Utilization.PNG', 'https://labor.ngrok.io', 'A Web application I created in order' +
     ' to help increase utilization and accountability by allowing user to input thier hours worked and compare it with the amount of hours generated. ' +
@@ -37,81 +35,18 @@ $(document).ready( function () {
     'https://github.com/mwinb/apacheco']
     ];
 
-    var slideVars = ['#currentProject', '#title', '#date', 'projectImage',
-    '#imageLink', '#about', '#sourceLink'];
-/*
-    var populateList = function(list) {
-        for (var i = 0; i < skillList.length; ++i)
-        {
-            $('.skills').append("<div class='skillList'>" + skillList[i] + "</div>");
-        }
-    }
-
-    var count = 0;
-
-    var total = projects.length;
-
-    $('#next').click(function () {
-        count += 1;
-        if(count >= projects.length) {
-            count = 0;
-        }
-
-        $('#slideShow').fadeOut(500, function () {
-            setSlide(count);
-        });
-
-
+    projects.forEach(element => {
+        $('#slideList').append(
+        "<li>" + 
+        "<a class=\"uk-link-muted\" href=\"" + element[3] + "\">" +
+        "<img id=\"projectImage\" src=\"" + element[2] +  "\" alt=\"\" uk-cover>" + 
+        "</a>"+
+        "<div class=\"uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom\">" + 
+            "<h3 class=\"uk-margin-remove\">" + element[0] + "</h3>" + 
+            "<p class=\"uk-margin-remove\">" + element[4] + "</p>" + 
+        "</div>" + 
+        "</li>"
+        );
     });
-
-    $('#previous').click(function () {
-        count -= 1;
-        if (count < 0) {
-            count = projects.length-1;
-        }
-
-        $('#slideShow').fadeOut(500, function () {
-            setSlide(count);
-        });
-
-    });
-
-    var setSlide = function (position) 
-    {
-        var current = position + 1;
-        $('#currentProject').text(current + '/' + total);
-        $('#title').text(projects[position][0]);
-        $('#date').text(projects[position][1]);
-        $('#projectImage').attr('src', projects[position][2]);
-        $('#imageLink').attr('href', projects[position][3]);
-        $('#about').text(projects[position][4]);
-        $('#sourceLink').attr('href', projects[position][5]);
-
-        for (var i = 0; i < slideVars.length; ++i)
-        {
-            $('#slideShow').fadeIn(1000);
-        }
-    };
-*/
-    var setSlide = function()
-    {
-        for(var i = 0; i < projects.length; i++)
-        {
-            $('#slideList').append(
-            "<li>" + 
-            "<a class=\"uk-link-muted\" href=\"" + projects[i][3] + "\">" +
-            "<img id=\"projectImage\" src=\"" + projects[i][2] +  "\" alt=\"\" uk-cover>" + 
-            "</a>"+
-            "<div class=\"uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom\">" + 
-                "<h3 class=\"uk-margin-remove\">" + projects[i][0] + "</h3>" + 
-                "<p class=\"uk-margin-remove\">" + projects[i][4] + "</p>" + 
-            "</div>" + 
-            "</li>"
-            );
-        };
-    }
-    setSlide();
-    //populateList(skillList);
-
 });
 
