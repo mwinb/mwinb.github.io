@@ -7,27 +7,18 @@ $(document).ready( function () {
     var projects = [
     ['Labor Tracker', 'Fall 18', 'Utilization.PNG', 'https://labor.ngrok.io', 'A Web application I created in order' +
     ' to help increase utilization and accountability by allowing user to input thier hours worked and compare it with the amount of hours generated. ' +
-    'Also allows the user to populate tables with totals for the specified periods. The user can then use this data to help schedule and to better allocate labor hours' + 
-    ' Uses Node, express, mongodb, and bcrypt.', 'https://github.com/mwinb/labortracker'],
+    'In order to better predict future labor usage.', 'https://github.com/mwinb/labortracker'],
 
     ['Functionality Check List', 'Winter 18', 'funChecker.jpeg', 'https://mwinb.github.io/funchecker', 
     'A page that I created in order to track accessories while testing devices for Geek Squad.'
     + ' Allows for user to check off the items by clicking on them. Creates a hexadecimal code that relates to whether'
-    +' or not the accessory button is selected. The user can write the code on a sheet, '
-    +'allowing for the next user to input the code and see what items came with the device.', 
+    +' or not the accessory button is selected.', 
     'https://github.com/mwinb/funChecker'],
-
-    ['Zombulator', 'Fall 2017', 'zombulatorImage.png', '/cs160Zombulator',
-    'Zombulator is a p5.js sketch that tests the mettle of humans against zombies. ' 
-    + 'Allows for user interaction to help administer the antidote to the zombies,'
-    + ' and turn the tides for the surviving humans',
-    'https://github.com/mwinb/cs160Zombulator'],
 
     ['TerminalDocs/Temdocs', 'Spring 2017 - Present', 'termdocsImage.jpeg', 'https://github.com/mwinb/termdocs', 
     'TerminalDocs is a console based text editor that I created using Python 2.7. ' 
     + 'I created TerminalDocs in order to help me comment, read, and edit code documents' 
-    + ' line by line and without distraction. Supports many commands such as -oe which opens current file into' 
-    + ' users default text editor. ',
+    + ' line by line and without distraction.',
     'https://github.com/mwinb/TerminalDocs'],
 
     ['Black Jack', 'Spring 2016', 'blackJackImage.jpeg','/blackjack', 
@@ -48,7 +39,7 @@ $(document).ready( function () {
 
     var slideVars = ['#currentProject', '#title', '#date', 'projectImage',
     '#imageLink', '#about', '#sourceLink'];
-
+/*
     var populateList = function(list) {
         for (var i = 0; i < skillList.length; ++i)
         {
@@ -101,9 +92,26 @@ $(document).ready( function () {
             $('#slideShow').fadeIn(1000);
         }
     };
-
-    setSlide(count);
-    populateList(skillList);
+*/
+    var setSlide = function()
+    {
+        for(var i = 0; i < projects.length; i++)
+        {
+            $('#slideList').append(
+            "<li>" + 
+            "<a class=\"uk-link-muted\" href=\"" + projects[i][3] + "\">" +
+            "<img id=\"projectImage\" src=\"" + projects[i][2] +  "\" alt=\"\" uk-cover>" + 
+            "</a>"+
+            "<div class=\"uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom\">" + 
+                "<h3 class=\"uk-margin-remove\">" + projects[i][0] + "</h3>" + 
+                "<p class=\"uk-margin-remove\">" + projects[i][4] + "</p>" + 
+            "</div>" + 
+            "</li>"
+            );
+        };
+    }
+    setSlide();
+    //populateList(skillList);
 
 });
 

@@ -2,11 +2,44 @@
 h1, h2, h3, h4, div {
     text-align: center;
 }
-li {
-    float: left;
-    padding-left: 15%;
-    font-size: 1.5em;
+
+p {
+    align-self: left;
 }
+
+
+a {
+    color: white !important;
+}
+
+.contactInfo {
+    color: black !important;
+}
+
+.navLink {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navDrop {
+    background-color: rgba(13, 70, 97, 0.9) !important;
+    
+}
+
+.uk-navbar-container {
+    background-color: rgba(1, 16, 24, 0.9) !important;
+}
+
+.uk-article {
+    padding: 2%;
+    margin-left: auto;
+}
+
+.projectTitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .skillList {
     display: inline-block;
@@ -16,29 +49,23 @@ li {
     font-size: 1.5em;
 }
 
+.slideButtons {
+    color: lightblue !important;
+}
+
 #mikeDixie {
     margin-left: auto;
     margin-right: auto;
-    max-height: 50%;
-    width: 50%;
+    max-height: 25%;
+    max-width: 25%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
 
-#about {
-    text-align:center;
-    font-size: 1.2em;
-    margin-left:25%;
-    margin-right:25%;
-}
-
-#title {
-    text-align: center;
-}
 
 #projectImage {
-    height: 50%;
-    width:  50%;
+    height: 100% !important;
+    width: 100% !important;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -46,23 +73,12 @@ li {
 
 }
 
-
-#linkMenu {
-    border-style: solid;
-    border-color: coral;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    background-color: #f2f3f4;
-}
 
 #slideShow {
     background-color: #f2f3f4;
-    width: 75%;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
-    border-left-style: solid;
-    border-left-color: coral;
-    border-right-color: coral;
-    border-right-style: solid;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
@@ -85,16 +101,7 @@ li {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
-.aboutMe {
-    font-size: 1.2em;
-    background-color: #f2f3f4;
-    width:90%;
-    margin-right: auto;
-    margin-left: auto;
-    border-style: solid;
-    border-color: coral;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
+
 
 .skills {
     background-color: #f2f3f4;

@@ -2,150 +2,99 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charsetF-8">
-
-    <link href="index.css" media="screen" type="text/css" rel="stylesheet" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-
     <script src="portfolio.js"></script>
-
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link href="index.css" media="screen" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
     <title>Portfolio Home</title>
 </head>
-
 <body>
-    <div class='spacer'> </div>
-    <br>
-    <div id="linkMenu">
-        <h1> Portfolio Links</h1>
-
-        <button class='buttons' onclick="window.location.href = 'https://mwinb.github.io/'" type='button'>
-            Home
-        </button>
-        <button class='buttons' onclick='window.location.href = "https://labor.ngrok.io"' type='button'>
-            Labor Tracker
-        </button>
-        <button class='buttons' onclick='window.location.href = "https://github.com/mwinb/termdocs"' type='button'>
-            TerminalDocs 
-        </button>
-        <button class='buttons' onclick="window.location.href = '../funchecker'" type='button'>
-            Functionality Checklist
-        </button>
-        <button class='buttons' onclick='window.location.href = "../blackjack"' type='button'>
-            Black Jack
-        </button>
-
-        <button class='buttons' onclick='window.location.href = "../knil"' type='button'>
-            Knil's Jquery Arena
-        </button>
-        <button class='buttons' onclick='window.location.href = "/cs160Zombulator"' type='button'>
-            Zombulator
-        </button>
-
-        <br>
-        <br>
-    </div>
-    <br>
-    <div class='personalInfo'>
-        <h1>Michael Winberry</h1>
-
-        <div>
-            <img id='mikeDixie' src="mikeanddixie.jpeg" />
-        </div>
-
-        <p>
-            mwinberry0101@gmail.com
-        </p>
-
-        <button class='buttons' onclick='window.location.href="https://github.com/mwinb"' type='button'>
-            GitHub
-        </button>
-
-        <button class='buttons' onclick="window.location.href = 'https:/mwinb.github.io/Resume.pdf'" type='button'>
-            R&#233sum&#233
-        </button>
-
-        <div class='spacer3'> </div>
-    </div>
-    <br>
-    <div class='aboutMe'>
-        <h1>
-            About Me:
-        </h1>
-        
-        <p id='aboutText'>
-            I was born in Redding, California.I graduated from Shasta High School in 2009. Upon graduation I spent four years (2010-2014) attached to First Marine Division, on Camp Pendleton, California, as a US Navy Corpsman. After deploying to Afghanistan in 2011
-            I spent two years as the Assistant Director of the Combat Trauma Management Course for 1st Marine Division. I completed my A.S. in Computer Science in 2017 at Cuesta College in Luis Obispo, CA. Currently I am attending Oregon State University
-            in order to obtain my Bachelors Degree in Computer Science.
-        </p>
-    </div>
-
-    <br>
-    <br>
-
-    <div class='skills'>
-        <h1>
-            Skills
-        </h1>
-    </div>
-
-    <br>
-
-
-
-    <br>
-
-    <div class='header'>
-        <div class='spacer'></div>
-        <br>
-        <h1>
-            Project's Slide Show
-        </h1>
-        <br>
-        <div class='spacer'></div>
-    </div>
-
-    <br>
-
-    <div id='slideShow'> 
-        <div class='spacer2'> </div>
-
-        <h2 id='title'></h2>
-
-        <h3 id='date'></h3>
-
-        <a id='imageLink' href=''>
-            <img id='projectImage' src='' />
-        </a>
-
-        <a id='sourceLink' href=''>
-            <h3>
-                Source Code
-            </h3>
-        </a>
-
-        <p id='about'></p> 
-        <div>
-            <button class='buttons' id='previous'>
-                < </button>
-
-                <button class='buttons' id='next'>
-                    >
-                </button>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent"><a class="navLink" href='https://mwinb.github.io'>Home</a></li>
+                    <li>
+                        <a class="navLink" href="#">Projects</a>
+                        <div class="navDrop uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="https://github.com/mwinb/LinkRatioAudit">LH Audit</a></li>
+                                <li><a href="https://labor.ngrok.io">Labor Tracker</a></li>
+                                <li><a href="https://github.com/mwinb/termdocs">Termdocs</a></li>
+                                <li><a href="../blackjack">Black Jack</a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="uk-parent"><a class="navLink" href="https://github.com/mwinb">Github</a></li>
+                    <li class="uk-parent"><a class="navLink" href="https://mwinb.github.io/Resume.pdf">Resume</a></li>
+                </ul>
             </div>
+        </nav>
+    </div>
+</br>
+<article class="uk-article">
+    <h1 class="uk-article-title">
+        <a class="uk-link-reset" href="">
+            Michael Winberry
+        </a>
+    </h1>
+    <p class="contactInfo uk-article-meta">
+        Contact Information:
+    </p>
+    <p class="contactInfo uk-article-meta">
+        Email: mwinberry0101@gmail.com
+    </p>
+    <p class="contactInfo uk-article-meta">
+        Phone: 805-305-6557
+    </p>
+    <div>
+        <img id='mikeDixie' src="mikeanddixie.jpeg" />
+    </div>
+    <p class="uk-text-lead">About Me</p>
+    <p> 
+        Recieved my A.S. in Computer Science in 2017 from Cuesta College.
+        I am Currently attending Oregon State University Cascades in the beautiful Bend, OR,
+        in order to obtain my B.S in computer science. My expected graduation of June 2020.
+        I am also interning as a developer for Centauri Corp in Colorado Springs,
+        Colorado working with Space Camp, an organization focused on bringing TDD, Agile,
+        and Extreme Programming methodoligies to the Government and Space based projects. 
+    </p>
+    <p class="uk-text-lead">Skills</p> 
+    <p>
+        I have experience with projects using the following programming languages:
+    </p> 
+    <p>
+        <ul class="uk-list uk-list-striped">
+            <li>Java</li>
+            <li>C</li>
+            <li>Angular</li>
+            <li>jQuery</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+            <li>C#</li>
+            <li>MongoDB</li>
+            <li>SQLite</li>
+        </ul>
+    </p>
+</article>
+</br>
+<p class="uk-text-lead uk-text-center">Projects</p>
+<div id="slideShow" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
-            <div>
-                <p id='currentProject'></p>
-            </div>
+        <ul id="slideList" class="uk-slideshow-items">
+        </ul>
+    
+        <a class="slideButtons uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="slideButtons uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+</div>
 
-            <div class='spacer2'> </div>
+<br>
 
-        </div>
+</body>
 
-        <br>
-
-
-        <br>
-
-    </body>
-
-    </html>
+</html>
