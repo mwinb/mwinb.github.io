@@ -3,6 +3,7 @@
 
 $(document).ready( function () {    
     var projects = [
+    ['SCOTTY', 'Summer 19', 'scotty.png', '/scotty', `An app prototype I created with UIkit and jQuery to grab various space based api's`, 'https://github.com/mwinb/scotty'],
     ['Labor Tracker', 'Fall 18', 'Utilization.PNG', 'https://labor.ngrok.io', 'A Web application I created in order' +
     ' to help increase utilization and accountability by allowing user to input thier hours worked and compare it with the amount of hours generated. ' +
     'In order to better predict future labor usage.', 'https://github.com/mwinb/labortracker'],
