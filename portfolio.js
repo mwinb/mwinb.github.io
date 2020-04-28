@@ -12,12 +12,12 @@ $(document).ready(function () {
       "https://github.com/mwinb/SilkCaseStudy",
     ],
     [
-      ("SCOTTY",
+      "SCOTTY",
       "Summer 19",
       "scotty.png",
       "/scotty",
       `An app prototype I created with UIkit and jQuery to grab various space based api's`,
-      "https://github.com/mwinb/scotty"),
+      "https://github.com/mwinb/scotty",
     ],
     [
       "Labor Tracker",
@@ -51,7 +51,6 @@ $(document).ready(function () {
         " line by line and without distraction.",
       "https://github.com/mwinb/TerminalDocs",
     ],
-
     [
       "Black Jack",
       "Spring 2016",
