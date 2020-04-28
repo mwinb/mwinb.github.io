@@ -6,7 +6,7 @@ $(document).ready(function () {
     [
       "Silk Case Study",
       "Winter 19",
-      "",
+      "SILK.png",
       "/SilkCaseStudy",
       "A walk through of a silk case study I performed while taking a network security class",
       "https://github.com/mwinb/SilkCaseStudy",
@@ -60,26 +60,6 @@ $(document).ready(function () {
       "A web based game of Black Jack using the jQuery JavaScript library. " +
         "Pits the user against a dealer and has 3 modes of difficulty.",
       "https://github.com/mwinb/blackjack",
-    ],
-
-    [
-      "Knils Arena",
-      "Spring 2015",
-      "knilImage.jpeg",
-      "/knil",
-      "Knils Arena is an adventure game built using jQuery JavaScript library." +
-        " Knils Arena allows the user to take control of  the Hero Knil and fight their way through two" +
-        ' levels in order to find the obtain the treasured "Knil Force".',
-      "https://github.com/mwinb/knil",
-    ],
-
-    [
-      "Apache Company Site",
-      "Spring 2015",
-      "apacheco.jpg",
-      "/apacheco",
-      "A website based on the Marine unit that I deployed to Afghanistan with, in 2011. ",
-      "https://github.com/mwinb/apacheco",
     ],
   ];
 
