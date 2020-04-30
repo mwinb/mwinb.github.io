@@ -4,12 +4,28 @@
 $(document).ready(function () {
   var projects = [
     [
+      "Battle Buddies",
+      "Winter 19",
+      "battleBuddies.jpg",
+      "/BattleBuddies",
+      "A Flutter application created to explore background isolates and processes. Sends push notifications on an interval for the user to send an updated gps location to a selected contact",
+      "https://github.com/mwinb/BattleBuddies",
+    ],
+    [
       "Silk Case Study",
       "Winter 19",
       "SILK.png",
       "/SilkCaseStudy",
       "A walk through of a silk case study I performed while taking a network security class",
       "https://github.com/mwinb/SilkCaseStudy",
+    ],
+    [
+      "Scotty Flutter",
+      "Summer 19",
+      "ScottyFlutter.jpg",
+      "/scottyFlutter",
+      "A Space News Aggregator created using flutter.",
+      "https://github.com/mwinb/scottyFlutter",
     ],
     [
       "SCOTTY",
