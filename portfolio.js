@@ -6,7 +6,7 @@ $(document).ready(function () {
     [
       "Battle Buddies",
       "Winter 19",
-      "battleBuddies.jpg",
+      "battleBuddies.png",
       "/BattleBuddies",
       "A Flutter application created to explore background isolates and processes. Sends push notifications on an interval for the user to send an updated gps location to a selected contact",
       "https://github.com/mwinb/BattleBuddies",
