@@ -22,7 +22,7 @@ $(document).ready(function () {
     [
       "Scotty Flutter",
       "Summer 19",
-      "ScottyFlutter.jpg",
+      "ScottyFlutter.png",
       "/scottyFlutter",
       "A Space News Aggregator created using flutter.",
       "https://github.com/mwinb/scottyFlutter",
@@ -36,28 +36,6 @@ $(document).ready(function () {
       "https://github.com/mwinb/scotty",
     ],
     [
-      "Labor Tracker",
-      "Fall 18",
-      "Utilization.PNG",
-      "https://labor.ngrok.io",
-      "A Web application I created in order" +
-        " to help increase utilization and accountability by allowing user to input thier hours worked and compare it with the amount of hours generated. " +
-        "In order to better predict future labor usage.",
-      "https://github.com/mwinb/labortracker",
-    ],
-
-    [
-      "Functionality Check List",
-      "Winter 18",
-      "funChecker.jpeg",
-      "https://mwinb.github.io/funchecker",
-      "A page that I created in order to track accessories while testing devices for Geek Squad." +
-        " Allows for user to check off the items by clicking on them. Creates a hexadecimal code that relates to whether" +
-        " or not the accessory button is selected.",
-      "https://github.com/mwinb/funChecker",
-    ],
-
-    [
       "TerminalDocs/Temdocs",
       "Spring 2017 - Present",
       "termdocsImage.jpeg",
@@ -66,15 +44,6 @@ $(document).ready(function () {
         "I created TerminalDocs in order to help me comment, read, and edit code documents" +
         " line by line and without distraction.",
       "https://github.com/mwinb/TerminalDocs",
-    ],
-    [
-      "Black Jack",
-      "Spring 2016",
-      "blackJackImage.jpeg",
-      "/blackjack",
-      "A web based game of Black Jack using the jQuery JavaScript library. " +
-        "Pits the user against a dealer and has 3 modes of difficulty.",
-      "https://github.com/mwinb/blackjack",
     ],
   ];
 
