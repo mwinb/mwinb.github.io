@@ -1,158 +1,142 @@
- 
-h1, h2, h3, h4, div {
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+div {
+  text-align: center;
 }
 
 p {
-    align-self: left;
+  align-self: left;
 }
 
-
 a {
-    color: white !important;
+  color: white !important;
 }
 
 .contactInfo {
-    color: black !important;
+  color: black !important;
 }
 
 .navLink {
-    color: white !important;
-    font-weight: bold;
+  color: white !important;
+  font-weight: bold;
 }
 
 .navDrop {
-    background-color: rgba(13, 70, 97, 0.9) !important;
-    
+  background-color: rgba(13, 70, 97, 0.9) !important;
 }
 
 .uk-navbar-container {
-    background-color: rgba(1, 16, 24, 0.9) !important;
+  background-color: rgba(1, 16, 24, 0.9) !important;
 }
 
 .uk-article {
-    padding: 2%;
-    margin-left: auto;
+  padding: 2%;
+  margin-left: auto;
 }
 
 .projectTitle {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .skillList {
-    display: inline-block;
-    padding: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5em;
+  display: inline-block;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
 }
 
 .slideButtons {
-    color: lightblue !important;
+  color: lightblue !important;
 }
 
 #mikeDixie {
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 25%;
-    max-width: 25%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 25%;
+  max-width: 25%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 
 #projectImage {
-    height: 100% !important;
-    width: 100% !important;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-
+  height: 100% !important;
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-
 #slideShow {
-    background-color: #f2f3f4;
-    width: 80%;
-    height: 80%;
-    min-height: fit-content !important;
-    min-width: fit-content !important;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
+  background-color: #f2f3f4;
+  width: 50%;
+  height: 50%;
+  min-height: fit-content !important;
+  min-width: fit-content !important;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #aboutText {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-
 
 .personalInfo {
-    background-color: #f2f3f4;
-    font-size:1.2em;
-    max-width: 50%;
-    word-wrap: break-word;
-    margin-right: auto;
-    margin-left: auto;
-    border-style: solid;
-    border-color: coral;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
+  background-color: #f2f3f4;
+  font-size: 1.2em;
+  max-width: 50%;
+  word-wrap: break-word;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: solid;
+  border-color: coral;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 
 .skills {
-    background-color: #f2f3f4;
-    width:90%;
-    margin-right: auto;
-    margin-left: auto;
-    border-style: solid;
-    border-color: coral;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
+  background-color: #f2f3f4;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: solid;
+  border-color: coral;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .spacer {
-    height: 10px;
-    background-color: #1a5682;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px; 
-    margin-left: auto;
-    margin-right: auto;   
+  height: 10px;
+  background-color: #1a5682;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .spacer2 {
-    height: 5px;
-    background-color: coral;
+  height: 5px;
+  background-color: coral;
 }
 
 .spacer3 {
-    height: 10px;
+  height: 10px;
 }
-
 
 .header {
-    background-color: #f2f3f4;
-    margin-top: 0;
-    margin-bottom:0;
+  background-color: #f2f3f4;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 
 .buttons {
-    max-width: 50%;
-    background-color: #68778e;
-    color: white;
-    font-size: 75%;
-    display: inline;
-    border-left: 2px white solid;
+  max-width: 50%;
+  background-color: #68778e;
+  color: white;
+  font-size: 75%;
+  display: inline;
+  border-left: 2px white solid;
 }
-
-
-
-
