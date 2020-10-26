@@ -6,10 +6,6 @@ div {
   text-align: center;
 }
 
-p {
-  align-self: left;
-}
-
 a {
   color: white !important;
 }
@@ -42,15 +38,18 @@ a {
 }
 
 .skillList {
-  display: inline-block;
-  padding: 2%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.5em;
+  display: flex;
+}
+
+.noTopMargin {
+  margin-top: 0 !important;
 }
 
 .slideButtons {
-  color: lightblue !important;
+  color: slategray !important;
 }
 
 #mikeDixie {
@@ -83,6 +82,10 @@ a {
 #aboutText {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.centerText {
+  text-align: center;
 }
 
 .personalInfo {

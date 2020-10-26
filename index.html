@@ -1,5 +1,6 @@
 <!DocType html>
 <html>
+
 <head>
     <meta http-equiv="content-type" content="text/html; charsetF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
     <title>Portfolio Home</title>
 </head>
+
 <body>
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
         <nav class="uk-navbar-container" uk-navbar>
@@ -18,66 +20,75 @@
                 <ul class="uk-navbar-nav">
                     <li class="uk-parent"><a class="navLink" href='https://mwinb.github.io'>Home</a></li>
                     <li class="uk-parent"><a class="navLink" href="https://github.com/mwinb">Github</a></li>
+                    <li class="uk-parent"><a class="navLink" href="https://www.linkedin.com/in/michael-winberry/">Linked
+                            In</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-</br>
-<article class="uk-article">
-    <h1 class="uk-article-title">
-        <a class="uk-link-reset" href="">
-            Michael Winberry
-        </a>
-    </h1>
-    <p class="contactInfo uk-text-lead">
-        Contact Information:
-    </p>
-    <p class="contactInfo uk-article-meta">
-        Email: mwinberry0101@gmail.com
-    </p>
-    <div>
-        <img id='mikeDixie' src="resizedProfile.jfif" />
-    </div>
-    <p class="uk-text-lead">About Me</p>
-    <p> 
-        I am currently a Software Developer at Centauri. I started there as an intern in June 2019 and was hired full time upon recieving my B.S. in Computer Science from Oregon State University in June 2020. 
-    </p>
-    <p class="uk-text-lead">Skills</p> 
-    <p>
-        I have experience with projects using the following programming languages:
-    </p> 
-    <p>
-        <ul class="uk-list uk-list-striped">
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>Angular</li>
-            <li>Jest</li>
-            <li>Nest JS</li>
-            <li>Node </li>
-            <li>Express</li>
-            <li>C#</li>
-            <li>.Net Core MVC</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>jQuery</li>
-            <li>Python</li>
-        </ul>
-    </p>
-</article>
-</br>
-<p class="uk-text-lead uk-text-center">Projects</p>
-<div id="slideShow" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+    </br>
+    <article class="uk-article">
+        <h1 class="uk-article-title">
+            <a class="uk-link-reset" href="">
+                Michael Winberry
+            </a>
+        </h1>
+        <p class="contactInfo uk-text-lead centerText">
+            Contact Information:
+        </p>
+        <p class="contactInfo uk-article-meta centerText">
+            Email: mwinberry0101@gmail.com
+        </p>
+        <div>
+            <img id='mikeDixie' src="resizedProfile.jfif" />
+        </div>
+        <p class="uk-text-lead uk-align-center  centerText">About Me</p>
+        <p class="uk-width-2-5 centerText uk-align-center">
+            Experienced Full Stack Software Developer with a demonstrated history of working in the Defense & Space
+            industry. Strong engineering professional with a Bachelor of Science - BS focused in Computer Science from
+            Oregon State University-Cascades. Experienced in remote, Agile, Test Driven, and Extreme Programming
+            environments.
+        </p>
+        <p class="uk-text-lead centerText">Skills</p>
+
+        <div class="skillList">
+            <ul class="uk-list uk-list-striped uk-width-1-2">
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>jQuery</li>
+                <li>Angular</li>
+                <li>NestJS</li>
+                <li>Node.js</li>
+            </ul>
+            <ul class="uk-list uk-list-striped uk-width-1-2 noTopMargin">
+                <li>Express</li>
+                <li>Flutter</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Go</li>
+                <li>C</li>
+                <li>C#</li>
+            </ul>
+        </div>
+
+    </article>
+    </br>
+    <p class="uk-text-lead uk-text-center">Projects</p>
+    <div id="slideShow" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+        uk-slideshow="animation: fade">
 
         <ul id="slideList" class="uk-slideshow-items">
         </ul>
-    
-        <a class="slideButtons uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="slideButtons uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    
-</div>
 
-<br>
+        <a class="slideButtons uk-position-center-left uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="slideButtons uk-position-center-right uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-next
+            uk-slideshow-item="next"></a>
+
+    </div>
+
+    <br>
 
 </body>
 
