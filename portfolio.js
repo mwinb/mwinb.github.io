@@ -4,6 +4,14 @@
 $(document).ready(function () {
   var projects = [
     [
+      "DocTs",
+      "Ongoing",
+      "DocTs.png",
+      "https://www.npmjs.com/package/@mwinberry/doc-ts",
+      "DocTs is a minimal framework built to support a simple and only slightly opinionated object oriented approach to implementing and unit testing Expressjs applications.",
+      "https://www.npmjs.com/package/@mwinberry/doc-ts",
+    ],
+    [
       "Battle Buddies",
       "Winter 19",
       "battleBuddies.png",
